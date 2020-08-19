@@ -35,6 +35,17 @@ class _WhatsAppHomeState extends State<WhatsAppHome> with SingleTickerProviderSt
             Tab(text: "Status",)
           ],
         ),
+        actions: [
+          Icon(
+            Icons.search
+          ),
+          Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 5.0)
+          ),
+          Icon(
+            Icons.more_vert
+          )
+        ],
       ),
       body: TabBarView(
         controller: this._tabController,
